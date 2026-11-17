@@ -652,7 +652,7 @@ def build_exhaustive_report_docx(docx_path):
     tbl_sub.alignment = WD_TABLE_ALIGNMENT.CENTER
     sub_data = [
         ("Nama Berkas Luaran Wajib", "Tautan Akses / Status Pengumpulan"),
-        ("1. Repositori GitHub Publik Proyek", "https://github.com/Wwinaa/absensiQR"),
+        ("1. Repositori GitHub Publik Proyek", "https://github.com/Wwinaa/proyek-rpl-absensi-digital"),
         ("2. Berkas README.md Repositori", "Memuat identitas, deskripsi AI, tautan video, dan petunjuk instalasi"),
         ("3. Tautan Video Presentasi & Demo (YouTube)", "Segera diperbarui setelah proses perekaman & unggah selesai"),
         ("4. Berkas Laporan Lengkap (PDF Tunggal)", "Laporan_Proyek_Akhir_RPL_Sistem_Presensi_SMK_NU_Wargabinangun.pdf")

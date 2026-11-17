@@ -394,7 +394,7 @@ def create_natural_script_document():
          "./vendor/bin/phpunit --testdox\n\n"
          "[Perlihatkan layar terminal]\n"
          "Bisa diliat di layar, 10 Test Cases (TC-01 sampai TC-10) semuanya berstatus OK dan 100% PASS! Dari mulai tes login, hitung jam keterlambatan, Dual-Sync, kirim Telegram, sampai tes injeksi SQL semuanya aman lolos uji.\n\n"
-         "Dan kalau kita buka repositori GitHub saya di https://github.com/Wwinaa/absensiQR, pada tab GitHub Actions, alur CI/CD pipeline-nya juga jalan otomatis dan berstatus HIJAU atau Passing!\n\n"
+         "Dan kalau kita buka repositori GitHub saya di https://github.com/Wwinaa/proyek-rpl-absensi-digital, pada tab GitHub Actions, alur CI/CD pipeline-nya juga jalan otomatis dan berstatus HIJAU atau Passing!\n\n"
          "Refleksi Saya Selama Mengerjakan Proyek Ini:\n"
          "Ngebuat sistem ini secara 100% mandiri dari awal PRD sampai testing bener-bener ngasih pengalaman yang berharga banget buat saya. Saya jadi ngerti gimana cara nyelesaiin masalah nyata di sekolah vokasi, ngerancang database 20 tabel yang rapi, nerapin prinsip Clean Code SOLID, nyambungin AI cloud NVIDIA, sampai nerapin otomatisasi CI/CD ala industri.\n\n"
          "Terima kasih banyak kepada Bapak Yudhistira Arie Wijaya atas bimbingan dan ilmunya selama satu semester ini. Semoga aplikasi ini bisa bermanfaat beneran buat kemajuan SMK NU WARGABINANGUN.\n\n"
