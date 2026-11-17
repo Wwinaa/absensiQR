@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma UI/UX Prototype Viewer - Sistem Presensi SMK NU Wargabinangun</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --figma-bg: #1E1E1E;
+            --figma-panel: #2C2C2C;
+            --figma-border: #3E3E3E;
+            --figma-accent: #0284C7;
+            --figma-purple: #A855F7;
+            --text-main: #FFFFFF;
+            --text-muted: #A0A0A0;
+        }
+        body {
+            background-color: var(--figma-bg);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+        .figma-navbar {
+            background-color: var(--figma-panel);
+            border-bottom: 1px solid var(--figma-border);
+            padding: 10px 20px;
+        }
+        .artboard-card {
+            background-color: #111827;
+            border: 1px solid var(--figma-border);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .artboard-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--figma-accent);
+        }
+        .artboard-header {
+            background: #1F2937;
+            padding: 10px 16px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #374151;
+        }
+        .color-badge {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-right: 10px;
+            border: 2px solid #4B5563;
+        }
+        .nav-tabs .nav-link {
+            color: var(--text-muted);
+            font-weight: 600;
+            border: none;
+            border-bottom: 3px solid transparent;
+            padding: 10px 18px;
+        }
+        .nav-tabs .nav-link.active {
+            color: var(--figma-accent);
+            background: transparent;
+            border-bottom: 3px solid var(--figma-accent);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Figma Header Toolbar -->
+<header class="figma-navbar d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center gap-3">
+        <span class="badge bg-purple px-2 py-1 fs-6" style="background-color: var(--figma-purple);">❖ Figma</span>
+        <span class="fw-bold">SMK NU Wargabinangun — UI/UX Design System & Prototype</span>
+        <span class="badge bg-secondary small">v4.0 Final OBE</span>
+    </div>
+    <div class="d-flex align-items-center gap-3">
+        <span class="small text-muted"><i class="fas fa-user-circle me-1"></i> Pengembang: <strong>Winarti (41257168)</strong></span>
+        <a href="Desain_UI_UX_Figma_Sistem_Presensi_SMK.png" target="_blank" class="btn btn-sm btn-outline-info rounded-pill">
+            <i class="fas fa-download me-1"></i> Buka File Gambar Asli (.PNG)
+        </a>
+    </div>
+</header>
+
+<div class="container-fluid py-4 px-4">
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs mb-4" id="figmaTabs" role="tablist">
+        <li class="nav-item">
+            <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button">
+                <i class="fas fa-image me-1"></i> Gambar Kanvas Lengkap (Showcase 4K)
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="design-system-tab" data-bs-toggle="tab" data-bs-target="#design-system" type="button">
+                <i class="fas fa-palette me-1"></i> Design System & Color Tokens
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="artboards-tab" data-bs-toggle="tab" data-bs-target="#artboards" type="button">
+                <i class="fas fa-th-large me-1"></i> Rincian 6 Artboard Antarmuka
+            </button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="figmaTabsContent">
+        
+        <!-- TAB 1: SHOWCASE IMAGE -->
+        <div class="tab-pane fade show active" id="overview" role="tabpanel">
+            <div class="alert alert-dark border-secondary d-flex justify-content-between align-items-center py-2">
+                <span>
+                    <i class="fas fa-info-circle text-info me-2"></i>
+                    <strong>Petunjuk Rekaman Video Segmen 2:</strong> Buka halaman ini, perlihatkan gambar desain di bawah ini ke kamera, lalu jelaskan palet warna Navy Blue, konsep Mobile-First, dan 6 modul utama sistem!
+                </span>
+                <span class="badge bg-info text-dark">Resolusi: 4800 x 3200 px (300 DPI)</span>
+            </div>
+
+            <div class="text-center p-2 bg-black rounded-3 border border-secondary shadow-lg">
+                <img src="Desain_UI_UX_Figma_Sistem_Presensi_SMK.png" alt="Desain UI UX Figma Sistem Presensi SMK" class="img-fluid rounded-2 shadow">
+            </div>
+        </div>
+
+        <!-- TAB 2: DESIGN SYSTEM -->
+        <div class="tab-pane fade" id="design-system" role="tabpanel">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="artboard-card p-4">
+                        <h5 class="fw-bold text-info mb-3"><i class="fas fa-swatchbook me-2"></i> Color Palette System</h5>
+                        <p class="small text-muted mb-3">Memenuhi standar rasio kontras aksesibilitas WCAG 2.1 Level AA (minimal 4.5:1 untuk teks normal).</p>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="color-badge" style="background-color: #0F172A;"></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Deep Navy (#0F172A)</h6>
+                                <span class="small text-muted">Base background dark, teks utama, dan card container eksekutif.</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="color-badge" style="background-color: #1E3A8A;"></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Royal Blue (#1E3A8A)</h6>
+                                <span class="small text-muted">Primary Brand, sidebar navigasi, dan header kartu penting.</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="color-badge" style="background-color: #0284C7;"></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Sky Blue (#0284C7)</h6>
+                                <span class="small text-muted">Accent UI, tombol Call-to-Action utama, dan tautan aktif.</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="color-badge" style="background-color: #10B981;"></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Emerald Green (#10B981)</h6>
+                                <span class="small text-muted">Indikator Hadir Tepat Waktu, status sukses, dan verified badge.</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="color-badge" style="background-color: #F59E0B;"></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold text-warning">Amber Orange (#F59E0B)</h6>
+                                <span class="small text-muted">Status Terlambat, perizinan menunggu persetujuan (Pending).</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <div class="color-badge" style="background-color: #EF4444;"></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold text-danger">Crimson Red (#EF4444)</h6>
+                                <span class="small text-muted">Status Alpa, penolakan pengajuan izin, dan peringatan firewall.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="artboard-card p-4">
+                        <h5 class="fw-bold text-info mb-3"><i class="fas fa-font me-2"></i> Typography & Component Tokens</h5>
+                        <div class="p-3 bg-dark rounded-3 border border-secondary mb-3">
+                            <h6 class="text-primary fw-bold mb-1">Font Family: Inter & Poppins Sans</h6>
+                            <p class="small text-muted mb-0">Tipografi sans-serif modern yang sangat tajam dan mudah dibaca di layar smartphone maupun proyektor kelas.</p>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-dark table-sm table-bordered">
+                                <thead>
+                                    <tr class="table-secondary text-dark">
+                                        <th>Level Hierarki</th>
+                                        <th>Ukuran Font</th>
+                                        <th>Weight</th>
+                                        <th>Penerapan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Heading 1 (H1)</td>
+                                        <td>24 px</td>
+                                        <td>Bold (700)</td>
+                                        <td>Judul halaman utama portal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Heading 2 (H2)</td>
+                                        <td>18 px</td>
+                                        <td>Semibold (600)</td>
+                                        <td>Judul kartu data & widget statistik</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Body Text</td>
+                                        <td>14 px</td>
+                                        <td>Regular (400)</td>
+                                        <td>Teks tabel, paragraf, form input</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Badge / Caption</td>
+                                        <td>12 px</td>
+                                        <td>Medium (500)</td>
+                                        <td>Label status hadir, jam scan, role</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h6 class="text-warning fw-bold mt-4 mb-2"><i class="fas fa-mobile-alt me-2"></i> Konsep Mobile-First Responsive:</h6>
+                        <p class="small text-muted">
+                            Antarmuka dirancang dari viewport smartphone (390 x 844 px) dengan satu kolom vertikal yang mulus, tombol besar ramah jempol, serta navigasi bawah. Saat dibuka di layar laptop/desktop (1440 x 900 px), tata letak otomatis melebar secara adaptif menjadi kartu multi-kolom yang luas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3: RINCIAN 6 ARTBOARD -->
+        <div class="tab-pane fade" id="artboards" role="tabpanel">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="artboard-card">
+                        <div class="artboard-header">
+                            <span>01. Portal Login Multi-Role</span>
+                            <span class="badge bg-primary">Auth RBAC</span>
+                        </div>
+                        <div class="p-3 text-muted small">
+                            <p class="mb-1"><strong>Fitur:</strong> Login terpusat 5 peran pengguna (Admin, Kepsek, Guru, Wali Kelas, Siswa).</p>
+                            <p class="mb-1"><strong>Keamanan:</strong> Enkripsi hash Bcrypt, proteksi Brute-Force lockout, session token guard.</p>
+                            <p class="mb-0"><strong>Komponen:</strong> Logo sekolah, input floating field, tombol masuk aksen Sky Blue.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="artboard-card">
+                        <div class="artboard-header">
+                            <span>02. Dashboard Administrator</span>
+                            <span class="badge bg-danger">Full Control</span>
+                        </div>
+                        <div class="p-3 text-muted small">
+                            <p class="mb-1"><strong>Fitur:</strong> Ringkasan makro 20 tabel database, 4 widget KPI kehadiran real-time.</p>
+                            <p class="mb-1"><strong>Visual:</strong> Grafik bar mingguan rasio presensi per hari.</p>
+                            <p class="mb-0"><strong>Aksi Cepat:</strong> Tombol Cetak Kartu Barcode Digital masal per rombel kelas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="artboard-card">
+                        <div class="artboard-header">
+                            <span>03. Real-Time QR Scanner</span>
+                            <span class="badge bg-success">Camera Engine</span>
+                        </div>
+                        <div class="p-3 text-muted small">
+                            <p class="mb-1"><strong>Fitur:</strong> Viewfinder kamera HTML5-QRCode dengan sudut fokus presisi dan laser scan line.</p>
+                            <p class="mb-1"><strong>Performa:</strong> Validasi jam server & toleransi keterlambatan dalam &lt;0.3 detik.</p>
+                            <p class="mb-0"><strong>Feedback:</strong> Audio beep sukses dan modal toast identitas siswa terdaftar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="artboard-card">
+                        <div class="artboard-header">
+                            <span>04. Supervisi KBM Kepsek</span>
+                            <span class="badge bg-info text-dark">Evaluasi Guru</span>
+                        </div>
+                        <div class="p-3 text-muted small">
+                            <p class="mb-1"><strong>Fitur:</strong> Pemantauan disiplin KBM dewan guru dan jurnal mengajar kelas.</p>
+                            <p class="mb-1"><strong>Inovasi:</strong> Pengiriman catatan evaluasi berpelacak status baca otomatis.</p>
+                            <p class="mb-0"><strong>Status Badge:</strong> "Telah Dibaca Guru" (Hijau) atau "Menunggu Dibaca" (Kuning).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="artboard-card">
+                        <div class="artboard-header">
+                            <span>05. Portal Siswa & Perizinan</span>
+                            <span class="badge bg-warning text-dark">Auto-Sync</span>
+                        </div>
+                        <div class="p-3 text-muted small">
+                            <p class="mb-1"><strong>Fitur:</strong> Kalender presensi mandiri dengan indikator warna (Hadir/Terlambat/Alpa).</p>
+                            <p class="mb-1"><strong>Form Izin:</strong> Formulir upload surat dokter dan alasan ketidakhadiran.</p>
+                            <p class="mb-0"><strong>Otomasi:</strong> Approval Admin otomatis menyinkronkan status absensi (Auto-Sync).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="artboard-card">
+                        <div class="artboard-header">
+                            <span>06. Asisten AI Hadir.io</span>
+                            <span class="badge bg-purple" style="background-color: var(--figma-purple);">NVIDIA NIM 70B</span>
+                        </div>
+                        <div class="p-3 text-muted small">
+                            <p class="mb-1"><strong>Dual-Engine:</strong> Database Grounding SQL lokal + Cloud LLM Llama 3.1 70B.</p>
+                            <p class="mb-1"><strong>Multilingual:</strong> Mendukung 4 bahasa adaptif (Indonesia, English, Sunda, Jawa).</p>
+                            <p class="mb-0"><strong>Keamanan:</strong> AI RBAC Firewall Guardrails memblokir upaya prompt injection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

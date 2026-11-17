@@ -1,0 +1,22 @@
+# Environment variables & secrets
+.env
+*.log
+chatbot_debug.log
+
+# Temporary and test files
+scratch/
+test_*.php
+test_*.txt
+test_*.xlsx
+debug_db*.php
+db_dump*.json
+db_siswa.txt
+verify_data.php
+test_pwd.php
+~$*
+*.bak
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
