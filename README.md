@@ -16,6 +16,7 @@
 | **Dosen Pengampu** | **Yudhistira Arie Wijaya, M.Kom., CDS.** |
 | **Kelompok** | Pengerjaan Mandiri (Individual Ownership & 100% Full-Stack Build) |
 | **Tema Topik Kelompok** | **E-Learning & Smart Education AI** |
+| **Repositori GitHub** | [https://github.com/Wwinaa/absensiQR](https://github.com/Wwinaa/absensiQR) |
 | **Mata Kuliah** | Rekayasa Perangkat Lunak (RPL) |
 | **Tahun Akademik** | 2025 / 2026 |
 
@@ -105,7 +106,7 @@ Pastikan komputer Anda sudah terinstal:
 Buka terminal (Git Bash, Command Prompt, atau PowerShell) di direktori `htdocs` XAMPP Anda:
 ```bash
 cd c:/xampp/htdocs
-git clone https://github.com/winarti-rpl/proyek-rpl-presensi-smk-nu-wargabinangun.git absen
+git clone https://github.com/Wwinaa/absensiQR.git absen
 cd absen
 ```
 *(Atau ekstrak file zip proyek ke dalam folder `c:\xampp\htdocs\absen`)*
