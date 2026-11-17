@@ -14,7 +14,7 @@
 | **Kelas / Angkatan** | TI-1C / Angkatan 2025 |
 | **Program Studi** | S1 Teknik Informatika |
 | **Dosen Pengampu** | **Yudhistira Arie Wijaya, M.Kom., CDS.** |
-| **Kelompok** | Pengerjaan Mandiri (Individual Ownership & 100% Full-Stack Build) |
+| **Kelompok** | **Sunyaragi Nexus** |
 | **Tema Topik Kelompok** | **E-Learning & Smart Education AI** |
 | **Repositori GitHub** | [https://github.com/Wwinaa/absensiQR](https://github.com/Wwinaa/absensiQR) |
 | **Mata Kuliah** | Rekayasa Perangkat Lunak (RPL) |
@@ -26,8 +26,7 @@
 
 Tonton presentasi komprehensif, bedah arsitektur UML & SDD, serta live demo sistem:
 
-- 🔗 **Link YouTube**: `[MASUKKAN LINK VIDEO YOUTUBE ANDA DI SINI]`  
-*(Contoh: `https://youtu.be/contoh-link-video-presentasi-winarti`)*  
+- 🔗 **Link YouTube**: *(Akan segera diperbarui setelah proses perekaman & unggah video selesai)*  
 - ⏱️ **Total Durasi**: Maksimal 24 Menit  
   - **Segmen 1: PRD & Latar Belakang** (3–5 Menit)  
   - **Segmen 2: Pemodelan UML & UI/UX Figma** (5–7 Menit)  

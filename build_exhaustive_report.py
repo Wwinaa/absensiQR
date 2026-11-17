@@ -139,8 +139,8 @@ def build_exhaustive_report_docx(docx_path):
         ("NIM (Nomor Induk Mahasiswa)", "41257168"),
         ("Kelas / Angkatan", "TI-1C-2025"),
         ("Program Studi", "S1 Teknik Informatika"),
+        ("Nama Kelompok", "Sunyaragi Nexus"),
         ("Tema Topik Kelompok", "E-Learning & Smart Education AI"),
-        ("Sifat Pengerjaan", "Mandiri / Perorangan (100% Individual Ownership & Full-App Build)"),
         ("Dosen Pengampu", "Yudhistira Arie Wijaya, M.Kom., CDS.")
     ]
     for i, (k, v) in enumerate(cov_data):
@@ -654,7 +654,7 @@ def build_exhaustive_report_docx(docx_path):
         ("Nama Berkas Luaran Wajib", "Tautan Akses / Status Pengumpulan"),
         ("1. Repositori GitHub Publik Proyek", "https://github.com/Wwinaa/absensiQR"),
         ("2. Berkas README.md Repositori", "Memuat identitas, deskripsi AI, tautan video, dan petunjuk instalasi"),
-        ("3. Tautan Video Presentasi & Demo (YouTube)", "Tersedia secara publik/unlisted pada berkas README.md GitHub"),
+        ("3. Tautan Video Presentasi & Demo (YouTube)", "Segera diperbarui setelah proses perekaman & unggah selesai"),
         ("4. Berkas Laporan Lengkap (PDF Tunggal)", "Laporan_Proyek_Akhir_RPL_Sistem_Presensi_SMK_NU_Wargabinangun.pdf")
     ]
     for i, (k, v) in enumerate(sub_data):
