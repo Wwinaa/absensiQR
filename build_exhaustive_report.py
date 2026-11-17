@@ -652,7 +652,7 @@ def build_exhaustive_report_docx(docx_path):
     tbl_sub.alignment = WD_TABLE_ALIGNMENT.CENTER
     sub_data = [
         ("Nama Berkas Luaran Wajib", "Tautan Akses / Status Pengumpulan"),
-        ("1. Repositori GitHub Publik Proyek", "https://github.com/winarti-rpl/proyek-rpl-presensi-smk-nu-wargabinangun"),
+        ("1. Repositori GitHub Publik Proyek", "https://github.com/Wwinaa/absensiQR"),
         ("2. Berkas README.md Repositori", "Memuat identitas, deskripsi AI, tautan video, dan petunjuk instalasi"),
         ("3. Tautan Video Presentasi & Demo (YouTube)", "Tersedia secara publik/unlisted pada berkas README.md GitHub"),
         ("4. Berkas Laporan Lengkap (PDF Tunggal)", "Laporan_Proyek_Akhir_RPL_Sistem_Presensi_SMK_NU_Wargabinangun.pdf")
